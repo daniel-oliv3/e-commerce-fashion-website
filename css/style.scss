@@ -56,3 +56,46 @@ html{
 section{
     padding:2rem 9%;
 }
+
+
+
+/* ======= Header Section/Seção do cabeçalho ======= */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: $box-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+
+    .logo {
+        font-size: 2.5rem;
+        color: $black;
+        font-weight: bolder;
+
+        i {
+            color: $red;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
