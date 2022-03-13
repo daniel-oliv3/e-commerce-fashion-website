@@ -12,6 +12,17 @@
   transition: 0.2s linear;
 }
 
+.header .icons div,
+.header .icons a {
+  color: #fff;
+  cursor: pointer;
+  -webkit-text-stroke: 0.1rem #130f40;
+}
+.header .icons div:hover,
+.header .icons a:hover {
+  -webkit-text-stroke: 0.1rem #eb4d4b;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -54,6 +65,19 @@ section {
 }
 .header .logo i {
   color: #eb4d4b;
+}
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #666;
+  margin: 0 1rem;
+}
+.header .navbar a:hover {
+  color: #eb4d4b;
+}
+.header .icons div,
+.header .icons a {
+  font-size: 2.5rem;
+  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

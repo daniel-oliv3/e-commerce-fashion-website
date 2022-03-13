@@ -82,6 +82,26 @@ section{
             color: $red;
         }
     }
+
+    .navbar {
+
+        a {
+            font-size: 1.7rem;
+            color: $light-color;
+            margin: 0 1rem;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+
+    .icons div,
+    .icons a {
+        font-size: 2.5rem;
+        margin-left: 2rem;
+        @extend %text-stroke;
+    }
 }
 
 
