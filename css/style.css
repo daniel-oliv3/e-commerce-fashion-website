@@ -95,6 +95,7 @@ section {
 }
 .header .search-form.active {
   right: 2rem;
+  transition: 0.4s linear;
 }
 .header .search-form input {
   height: 100%;
@@ -111,6 +112,45 @@ section {
 
 #menu-btn {
   display: none;
+}
+
+/* ======= Responsive/Responsividade ======= */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem;
+    display: block;
+  }
+}
+@media (max-width: 360px) {
+  html {
+    font-size: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
