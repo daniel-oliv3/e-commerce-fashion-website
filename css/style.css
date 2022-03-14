@@ -12,13 +12,13 @@
   transition: 0.2s linear;
 }
 
-.header .icons div,
+.header .search-form label, .header .icons div,
 .header .icons a {
   color: #fff;
   cursor: pointer;
   -webkit-text-stroke: 0.1rem #130f40;
 }
-.header .icons div:hover,
+.header .search-form label:hover, .header .icons div:hover,
 .header .icons a:hover {
   -webkit-text-stroke: 0.1rem #eb4d4b;
 }
@@ -78,6 +78,35 @@ section {
 .header .icons a {
   font-size: 2.5rem;
   margin-left: 2rem;
+}
+.header .search-form {
+  position: absolute;
+  top: 115%;
+  right: -105%;
+  width: 50rem;
+  height: 5.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+.header .search-form.active {
+  right: 2rem;
+}
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  text-transform: none;
+  color: #130f40;
+  padding: 0 1.2rem;
+}
+.header .search-form label {
+  font-size: 2.2rem;
+  margin-right: 1.7rem;
 }
 
 #menu-btn {

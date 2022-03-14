@@ -102,6 +102,40 @@ section{
         margin-left: 2rem;
         @extend %text-stroke;
     }
+
+    .search-form {
+        position: absolute;
+        top: 115%;
+        right: -105%;
+        width: 50rem;
+        height: 5.5rem;
+        background: #fff;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: $box-shadow;
+        border: $border;
+
+        &.active {
+            right: 2rem;
+        }
+
+        input {
+            height: 100%;
+            width: 100%;
+            font-size: 1.6rem;
+            text-transform: none;
+            color: $black;
+            padding: 0 1.2rem;
+        }
+
+        label {
+            font-size: 2.2rem;
+            @extend %text-stroke;
+            margin-right: 1.7rem;
+        }
+    }
 }
 
 #menu-btn {
