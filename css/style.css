@@ -152,5 +152,8 @@ section {
     font-size: 50%;
   }
 }
+/*
+    sass --watch ./css/style.scss:./css/style.css
+*/
 
 /*# sourceMappingURL=style.css.map */
