@@ -44,6 +44,20 @@ section {
   padding: 2rem 9%;
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.9rem 3rem;
+  border-radius: 0.5rem;
+  background: #eb4d4b;
+  color: #fff;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #130f40;
+}
+
 /* ======= Header Section/Seção do cabeçalho ======= */
 .header {
   position: fixed;
@@ -193,7 +207,7 @@ section {
     left: 0;
     right: 0;
     background: #fff;
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .header .navbar.active {
@@ -213,14 +227,60 @@ section {
   .header .search-form.active {
     right: 0;
   }
+
+  .home .home-slider .slide {
+    padding-left: 2rem;
+  }
 }
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .banner-container .banner .content {
+    right: 2rem;
+  }
+  .banner-container .banner .content h3 {
+    font-size: 2rem;
+  }
+
+  .products .box-container .box {
+    width: 100%;
+  }
+
+  .deal .image img {
+    width: 100%;
+  }
+
+  .deal .content {
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .featured .swiper-button-next,
+.featured .swiper-button-prev {
+    display: none;
+  }
+
+  .blogs .swiper-button-next,
+.blogs .swiper-button-prev {
+    display: none;
+  }
+
+  .contact .row form .inputBox input {
+    width: 100%;
   }
 }
 /*
     sass --watch ./css/style.scss:./css/style.css
+
+    - https://swiperjs.com/get-started
+
+
 */
 
 /*# sourceMappingURL=style.css.map */

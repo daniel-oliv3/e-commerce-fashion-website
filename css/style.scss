@@ -57,6 +57,21 @@ section {
     padding:2rem 9%;
 }
 
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    background: $red;
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+
+    &:hover {
+        background: $black;
+    }
+}
+
 
 
 /* ======= Header Section/Seção do cabeçalho ======= */
@@ -240,70 +255,119 @@ section {
 
 
 /* ======= Responsive/Responsividade ======= */
-@media (max-width: 991px){
+@media (max-width:991px){
 
-    html {
+    html{
         font-size: 55%;
     }
 
-    .header {
-        padding: 2rem;
-    }
-
-    section {
+    .header{
         padding:2rem;
     }
+
+    section{
+        padding:2rem;
+    }
+
 }
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
-    #menu-btn {
+    #menu-btn{
         display: inline-block;
     }
-    
-    .header .navbar {
+
+    .header .navbar{
         position: absolute;
-        top: 99%;
-        left: 0;
-        right: 0;
-        background: #fff;
-        border: $border;
+        top:99%; left:0; right:0;
+        background:#fff;
+        border-bottom: $border;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 
-        &.active {
+        &.active{
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
 
-        a {
+        a{
             font-size: 2rem;
-            margin: 2rem;
+            margin:2rem;
             display: block;
         }
-    }
 
-    .header .search-form {
-        width: 100%;
-        top: 100%;
+    }
+    
+    .header .search-form{
+        width:100%;
+        top:100%;
         border-radius: 0;
 
-        &.active {
-            right: 0;
+        &.active{
+            right:0;
         }
     }
+
+    .home .home-slider .slide{
+        padding-left: 2rem;
+    }
+
 }
 
-@media (max-width: 360px){
+@media (max-width:450px){
 
-    html {
+    html{
         font-size: 50%;
     }
-}
 
+    .heading{
+        font-size: 3rem;
+    }
+
+    .banner-container .banner .content{
+        right: 2rem;
+
+        h3{
+            font-size: 2rem;
+        }
+
+    }
+
+    .products .box-container .box{
+        width: 100%;
+    }
+
+    .deal .image img{
+        width:100%;
+    }
+
+    .deal .content{
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .featured .swiper-button-next,
+    .featured .swiper-button-prev{
+        display: none;
+    }
+
+    .blogs .swiper-button-next,
+    .blogs .swiper-button-prev{
+        display: none;
+    }
+
+    .contact .row form .inputBox input{
+        width: 100%;
+    }
+
+}
 
 
 
 /*
     sass --watch ./css/style.scss:./css/style.css
+
+    - https://swiperjs.com/get-started
+
+    
 */
 
 
