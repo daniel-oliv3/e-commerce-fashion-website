@@ -14,7 +14,7 @@ document.querySelector('#menu-btn').onclick = () => {
     searchForm.classList.remove('active');
 }
 
-windows.onscroll = () => {
+window.onscroll = () => {
     searchForm.classList.remove('active');
     navbar.classList.remove('active');
 }
