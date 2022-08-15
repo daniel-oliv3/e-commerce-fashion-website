@@ -114,6 +114,60 @@ section {
   display: none;
 }
 
+/* ======= Home Section/Seção de inicio ======= */
+.home {
+  padding: 0;
+  padding-top: 7.6rem;
+}
+.home .home-slider .slide {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  padding-left: 7%;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.home .home-slider .slide .content span {
+  font-size: 2rem;
+  color: #666;
+}
+.home .home-slider .slide .content h3 {
+  font-size: 6rem;
+  color: #130f40;
+  padding-top: 0.5rem;
+}
+.home .swiper-button-next {
+  top: 90%;
+  right: 2rem;
+}
+.home .swiper-button-prev {
+  top: 90%;
+  right: 8rem;
+  left: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  color: #130f40;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #130f40;
+  color: #fff;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem;
+}
+
 /* ======= Responsive/Responsividade ======= */
 @media (max-width: 991px) {
   html {
@@ -121,6 +175,10 @@ section {
   }
 
   .header {
+    padding: 2rem;
+  }
+
+  section {
     padding: 2rem;
   }
 }
@@ -145,6 +203,15 @@ section {
     font-size: 2rem;
     margin: 2rem;
     display: block;
+  }
+
+  .header .search-form {
+    width: 100%;
+    top: 100%;
+    border-radius: 0;
+  }
+  .header .search-form.active {
+    right: 0;
   }
 }
 @media (max-width: 360px) {
