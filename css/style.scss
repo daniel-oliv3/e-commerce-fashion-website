@@ -429,6 +429,64 @@ section {
 }
 
 
+/* ======= Deal Section/Seção de negócios ======= */
+.deal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    background: linear-gradient(#fff 20%, $light-bg 20.1%);
+    //justify-content: center;
+
+    .image {
+        flex: 1 1 42rem;
+
+        img {
+            width: 40rem;
+        }
+    }
+
+    .content {
+        flex: 1 1 42rem;
+
+        span {
+            color: $red;
+            font-size: 1.7rem;
+        }
+
+        h3 {
+            color: $black;
+            font-size: 3rem;
+            padding: .5rem 0;
+        }
+
+        p {
+            color: $light-color;
+            font-size: 2rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
