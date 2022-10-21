@@ -289,40 +289,40 @@ section {
 
 
 /* ======= Products Section/Seção de produtos ======= */
-.products{
+.products {
 
-    .filter-buttons{
+    .filter-buttons {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding-bottom: 2.5rem;
-        gap:2rem;
+        gap: 2rem;
 
-        .buttons{
+        .buttons {
             font-size: 1.7rem;
-            color:$light-color;
+            color: $light-color;
             cursor: pointer;
 
             &:hover,
-            &.active{
+            &.active {
                 color:$red;
             }
         }
     }
 
-    .box-container{
+    .box-container {
         display: flex;
         flex-wrap: wrap;
-        gap:1.5rem;
+        gap: 1.5rem;
         justify-content: center;
 
         .box{
-            width:26rem;
+            width: 26rem;
             border-radius: .5rem;
             overflow: hidden;
             position: relative;
             box-shadow: $box-shadow;
-            border:$border;
+            border: $border;
 
             &.hide{
                 display: none;
