@@ -37,8 +37,8 @@ filterBtn.forEach(button =>{
       item.classList.add('hide');
 
       if(item.getAttribute('data-item') == dataFilter || dataFilter == 'all'){
-        item.classList.remove('active');
-        item.classList.add('hide');
+        item.classList.remove('hide');
+        item.classList.add('active');
       }
     });
   }
