@@ -469,7 +469,113 @@ section {
 
 
 /* ======= Featured Section/Seção em destaque ======= */
+.featured {
 
+    .featured-slide {
+
+        .slide {
+
+            border-radius: .5rem;
+            overflow: hidden;
+            position: relative;
+            box-shadow: $box-shadow;
+            border: $border;
+
+            .icons{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0,0,0,.7);
+                height: 35rem;
+                width: 100%;
+                position: absolute;
+                top:0; left:0;
+                gap:.5rem;
+                transform: scale(0);
+                z-index: 1;
+
+                a{
+                    font-size: 2rem;
+                    height: 5rem;
+                    width: 5rem;
+                    line-height: 5rem;
+                    text-align: center;
+                    background:#fff;
+                    border-radius: .5rem;
+                    @extend %text-stroke;
+                }
+
+            }
+
+            &:hover .icons{
+                transform: scale(1);
+            }
+
+            .image{
+                height: 35rem;
+                width: 100%;
+                overflow: hidden;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &:hover .image img{
+                transform: scale(1.1);
+            }
+
+            .content{
+                padding:1rem 1.5rem;
+
+                h3{
+                    font-size: 2rem;
+                    color:$black;
+                    font-weight: normal;
+                }
+
+                .price{
+                    padding:.5rem 0;
+                    display: flex;
+                    gap:.5rem;
+                    align-items: center;
+
+                    .amount{
+                        font-size: 2.2rem;
+                        font-weight: bolder;
+                        color:$black;
+                    }
+
+                    .cut{
+                        font-size: 1.5rem;
+                        text-decoration: line-through;
+                        color:$light-color;
+                    }
+
+                    .offer{
+                        font-size: 2rem;
+                        color:$red;
+                    }
+
+                }
+
+                .stars{
+                    font-size: 1.7rem;
+                    
+                    i{
+                        color:gold;
+                    }
+
+                    span{
+                        color:$light-color;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
