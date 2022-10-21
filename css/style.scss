@@ -57,6 +57,17 @@ section {
     padding:2rem 9%;
 }
 
+.heading {
+    font-size: 3.5rem;
+    color: $black;
+    padding-bottom: 2rem;
+    text-align: center;
+
+    span {
+        color: $red;
+    }
+}
+
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -196,27 +207,27 @@ section {
     }
 
     .swiper-button-next{
-        top:90%;
-        right:2rem;
+        top: 90%;
+        right: 2rem;
     }
 
     .swiper-button-prev{
-        top:90%;
-        right:8rem;
-        left:auto;
+        top: 90%;
+        right: 8rem;
+        left: auto;
     }
 
 }
 
 .swiper-button-next,
-.swiper-button-prev{
-    height:5rem;
-    width:5rem;
+.swiper-button-prev {
+    height: 5rem;
+    width: 5rem;
     border-radius: .5rem;
     background:#fff;
     box-shadow: $box-shadow;
-    border:$border;
-    color:$black;
+    border: $border;
+    color: $black;
 
     &:hover{
         background: $black;
