@@ -45,7 +45,7 @@ filterBtn.forEach(button =>{
 
 });
 
-/* Swiper-js Slider */
+/* Swiper-js Slider Home*/
 var swiper = new Swiper(".home-slider", {
     centeredSlides: true,
     loop:true,
@@ -59,4 +59,32 @@ var swiper = new Swiper(".home-slider", {
     },
   });
   
-  
+
+/* Swiper-js Slider 2 Featured */
+var swiper = new Swiper(".featured-slider", {
+  centeredSlides: true,
+  loop:true,
+  spaceBetween:20,
+  autoplay: {
+    delay: 9500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
