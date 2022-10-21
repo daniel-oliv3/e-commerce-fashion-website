@@ -217,8 +217,17 @@ section {
 .banner-container .banner .content {
   position: absolute;
   top: 50%;
-  right: 2rem;
+  right: 5rem;
   transform: translateY(-50%);
+}
+.banner-container .banner .content span {
+  font-size: 2rem;
+  color: #666;
+}
+.banner-container .banner .content h3 {
+  font-size: 3.2rem;
+  color: #130f40;
+  padding-top: 0.5rem;
 }
 
 /* ======= Responsive/Responsividade ======= */

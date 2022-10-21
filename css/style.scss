@@ -269,8 +269,19 @@ section {
         .content {
             position: absolute;
             top: 50%;
-            right: 2rem;
+            right: 5rem;
             transform: translateY(-50%);
+
+            span {
+                font-size: 2rem;
+                color: $light-color;
+            }
+
+            h3 {
+                font-size: 3.2rem;
+                color: $black;
+                padding-top: .5rem;
+            }
         }
     }
 }
