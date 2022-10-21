@@ -318,6 +318,52 @@ section {
 
         .box {
             flex: 1 1 26rem;
+            border-radius: .5rem;
+            overflow: hidden;
+            position: relative;
+            box-shadow: $box-shadow;
+            border: $border;
+
+            .icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 0, 0, .7);
+                height: 35rem;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                gap: .5rem;
+                z-index: 1;
+
+                a {
+                    font-size: 2rem;
+                    height: 5rem;
+                    width: 5rem;
+                    background: #fff;
+                    line-height: 5rem;
+                    text-align: center;
+                    border-radius: .5rem;
+                    @extend %text-stroke;
+                }
+            }
+
+            .image {
+                height: 35rem;
+                width: 100%;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &:hover .image img {
+            transform: scale(1.1);
         }
     }
 }
