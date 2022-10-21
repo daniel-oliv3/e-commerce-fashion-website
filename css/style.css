@@ -236,6 +236,24 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 2rem;
+  gap: 2rem;
+}
+.products .filter-buttons .buttons {
+  font-size: 1.7rem;
+  color: #666;
+  cursor: pointer;
+}
+.products .filter-buttons .buttons:hover, .products .filter-buttons .buttons.active {
+  color: #eb4d4b;
+}
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.products .box-container .box {
+  flex: 1 1 26rem;
 }
 
 /* ======= Responsive/Responsividade ======= */

@@ -296,6 +296,29 @@ section {
         flex-wrap: wrap;
         justify-content: center;
         padding-bottom: 2rem;
+        gap: 2rem;
+
+        .buttons {
+            font-size: 1.7rem;
+            color: $light-color;
+            cursor: pointer;
+
+            &:hover,
+            &.active {
+                color: $red;
+            }
+        }
+    }
+
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+
+        .box {
+            flex: 1 1 26rem;
+        }
     }
 }
 
