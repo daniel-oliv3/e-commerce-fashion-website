@@ -230,6 +230,14 @@ section {
   padding-top: 0.5rem;
 }
 
+/* ======= Products Section/Seção de produtos ======= */
+.products .filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
 /* ======= Responsive/Responsividade ======= */
 @media (max-width: 991px) {
   html {

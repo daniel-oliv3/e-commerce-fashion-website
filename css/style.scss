@@ -288,8 +288,16 @@ section {
 
 
 
+/* ======= Products Section/Seção de produtos ======= */
+.products {
 
-
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+}
 
 
 
