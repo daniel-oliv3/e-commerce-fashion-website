@@ -12,13 +12,13 @@
   transition: 0.2s linear;
 }
 
-.featured .featured-slide .slide .icons a, .products .box-container .box .icons a, .header .search-form label, .header .icons div,
+.featured .featured-slider .slide .icons a, .products .box-container .box .icons a, .header .search-form label, .header .icons div,
 .header .icons a {
   color: #fff;
   cursor: pointer;
   -webkit-text-stroke: 0.1rem #130f40;
 }
-.featured .featured-slide .slide .icons a:hover, .products .box-container .box .icons a:hover, .header .search-form label:hover, .header .icons div:hover,
+.featured .featured-slider .slide .icons a:hover, .products .box-container .box .icons a:hover, .header .search-form label:hover, .header .icons div:hover,
 .header .icons a:hover {
   -webkit-text-stroke: 0.1rem #eb4d4b;
 }
@@ -375,14 +375,14 @@ section {
 }
 
 /* ======= Featured Section/Seção em destaque ======= */
-.featured .featured-slide .slide {
+.featured .featured-slider .slide {
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
 }
-.featured .featured-slide .slide .icons {
+.featured .featured-slider .slide .icons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -396,7 +396,7 @@ section {
   transform: scale(0);
   z-index: 1;
 }
-.featured .featured-slide .slide .icons a {
+.featured .featured-slider .slide .icons a {
   font-size: 2rem;
   height: 5rem;
   width: 5rem;
@@ -405,58 +405,98 @@ section {
   background: #fff;
   border-radius: 0.5rem;
 }
-.featured .featured-slide .slide:hover .icons {
+.featured .featured-slider .slide:hover .icons {
   transform: scale(1);
 }
-.featured .featured-slide .slide .image {
+.featured .featured-slider .slide .image {
   height: 35rem;
   width: 100%;
   overflow: hidden;
 }
-.featured .featured-slide .slide .image img {
+.featured .featured-slider .slide .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.featured .featured-slide .slide:hover .image img {
+.featured .featured-slider .slide:hover .image img {
   transform: scale(1.1);
 }
-.featured .featured-slide .slide .content {
+.featured .featured-slider .slide .content {
   padding: 1rem 1.5rem;
 }
-.featured .featured-slide .slide .content h3 {
+.featured .featured-slider .slide .content h3 {
   font-size: 2rem;
   color: #130f40;
   font-weight: normal;
 }
-.featured .featured-slide .slide .content .price {
+.featured .featured-slider .slide .content .price {
   padding: 0.5rem 0;
   display: flex;
   gap: 0.5rem;
   align-items: center;
 }
-.featured .featured-slide .slide .content .price .amount {
+.featured .featured-slider .slide .content .price .amount {
   font-size: 2.2rem;
   font-weight: bolder;
   color: #130f40;
 }
-.featured .featured-slide .slide .content .price .cut {
+.featured .featured-slider .slide .content .price .cut {
   font-size: 1.5rem;
   text-decoration: line-through;
   color: #666;
 }
-.featured .featured-slide .slide .content .price .offer {
+.featured .featured-slider .slide .content .price .offer {
   font-size: 2rem;
   color: #eb4d4b;
 }
-.featured .featured-slide .slide .content .stars {
+.featured .featured-slider .slide .content .stars {
   font-size: 1.7rem;
 }
-.featured .featured-slide .slide .content .stars i {
+.featured .featured-slider .slide .content .stars i {
   color: gold;
 }
-.featured .featured-slide .slide .content .stars span {
+.featured .featured-slider .slide .content .stars span {
   color: #666;
+}
+
+.review {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: #f9f9f9;
+}
+.review .slide {
+  border-radius: 0.5rem;
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.review .slide p {
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 2;
+}
+.review .slide .user {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+.review .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.review .slide .user h3 {
+  font-size: 2.2rem;
+  color: #130f40;
+}
+.review .slide .user span {
+  font-size: 1.5rem;
+  color: #eb4d4b;
 }
 
 /* ======= Responsive/Responsividade ======= */

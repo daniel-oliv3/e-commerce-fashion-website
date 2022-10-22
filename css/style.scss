@@ -469,17 +469,16 @@ section {
 
 
 /* ======= Featured Section/Seção em destaque ======= */
-.featured {
+.featured{
 
-    .featured-slide {
+    .featured-slider{
 
-        .slide {
-
+        .slide{
             border-radius: .5rem;
             overflow: hidden;
             position: relative;
             box-shadow: $box-shadow;
-            border: $border;
+            border:$border;
 
             .icons{
                 display: flex;
@@ -572,11 +571,60 @@ section {
                         color:$light-color;
                     }
                 }
+
+            }
+        }
+
+    }
+
+}
+
+.review{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: $light-bg;
+
+    .slide{
+        border-radius: .5rem;
+        background:#fff;
+        border:$border;
+        padding:2rem;
+        text-align: center;
+        box-shadow: $box-shadow;
+
+        p{
+            font-size: 1.4rem;
+            color:$light-color;
+            line-height: 2;
+        }
+
+        .user{
+            padding-top: 2rem;
+            display: flex;
+            align-items: center;
+            gap:1rem;
+            justify-content: center;
+
+            img{
+                height: 7rem;
+                width: 7rem;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            h3{
+                font-size: 2.2rem;
+                color:$black;
+            }
+
+            span{
+                font-size: 1.5rem;
+                color:$red
             }
         }
     }
-}
 
+}
 
 
 
